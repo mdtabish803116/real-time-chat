@@ -160,7 +160,7 @@ function Chat(props) {
 
                     {showPicker ? <BsFillEmojiSmileFill className='w-[20px] h-[20px] text-[#ffb02e] border-[black]' /> : <BsEmojiSmile className='w-[20px] h-[20px]' />}
                   </div>
-                  <button onClick={(e) => keyDownFunction(e)} className='bg-[green] text-[white] border-[2px] border-[#d4d4d4] text-[14px] px-2 py-[3px] text-[#9e9e9e] font-medium rounded-[7px] -mt-1'>Send</button>
+                  <button onClick={(e) => keyDownFunction(e)} className='bg-[green] text-[#ffff] border-[2px] border-[#d4d4d4] text-[14px] px-2 py-[3px] text-[#9e9e9e] font-medium rounded-[7px] -mt-1'>Send</button>
                 </div>
               </div>
             </div>
