@@ -109,7 +109,7 @@ function Group() {
             <Search isLoading={isLoading} handleClick={handleClick} search={search} searchResults={searchResults} />
 
             <div className='flex justify-end mt-3'>
-              <button onClick={handleSubmit} className='bg-[#0086ea] text-[#fff] text-[15px] font-medium px-2 py-1 tracking-wide' type='submit'>Create</button>
+              <button onClick={handleSubmit} className='bg-[green] text-[#fff] text-[15px] font-medium px-2 py-1 tracking-wide' type='submit'>Create</button>
             </div>
           </form>
 
