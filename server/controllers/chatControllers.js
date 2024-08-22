@@ -75,7 +75,6 @@ export const creatGroup = async (req, res) => {
     const createdChat = await Chat.findOne({ _id: chat._id })
       .populate('users', '-password')
       .populate('groupAdmin', '-password');
-    // res.status(200).json(createdChat);
     res.send(createdChat);
   } catch (error) {
     res.sendStatus(500);
@@ -128,4 +127,4 @@ export const removeFromGroup = async (req, res) => {
     res.status(409).send('user doesnt exists');
   }
 };
-export const removeContact = async (req, res) => {};
+
