@@ -1,7 +1,6 @@
 {
   "name": "clients",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.7.1",
     "@emoji-mart/data": "^1.1.2",
