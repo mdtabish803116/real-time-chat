@@ -8,6 +8,7 @@ const API = (token) =>
 let url = process.env.REACT_APP_SERVER_URL;
 export const loginUser = async (body) => {
   try {
+     console.log(body)
     return await axios.post(`${url}/auth/login`, body);
   } catch (error) {
     console.log('error in loginuser api');

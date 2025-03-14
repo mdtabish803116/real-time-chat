@@ -3,6 +3,7 @@ import bcrypt from 'bcryptjs';
 import { OAuth2Client } from 'google-auth-library';
 export const register = async (req, res) => {
   const { firstname, lastname, email, password } = req.body;
+   console.log(req)
   try {
     const existingUser = await user.findOne({ email });
     if (existingUser)

@@ -20,9 +20,12 @@ function Login() {
   }
 
   const formSubmit = async (e) => {
+    
+    console.log("clicked")
     e.preventDefault()
     if (formData.email.includes("@") && formData.password.length > 6) {
       setIsLoading(true)
+      console.log(formData)
       const { data } = await loginUser(formData)
       if (data?.token) {
         localStorage.setItem("userToken", data.token)
